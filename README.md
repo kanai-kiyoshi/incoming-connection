@@ -1,6 +1,7 @@
 ## hacknetGUI
 
-ハッキングされたときに使う。
+ハッキングされたとき,下の画面を表示して使う。
+
 https://kanai-kiyoshi.github.io/incoming-connection/
 
 
