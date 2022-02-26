@@ -1,13 +1,6 @@
 'use strict';
 
-setTimeout(doThis,1000);
-
 function doThis(){
-	// font load
-	let fontFace=document.createElement('link');
-	fontFace.setAttribute('href','https://fonts.cdnfonts.com/css/politik');
-	fontFace.setAttribute('rel','stylesheet');
-	document.getElementsByTagName('head')[0].appendChild(fontFace);
 
 	const duration=250;
 	let belt=document.getElementsByTagName('belt')[0];
@@ -45,7 +38,13 @@ function doThis(){
 	});
 };
 
-window.addEventListener('load',function(){
+function load(){
+	// font load
+	let fontFace=document.createElement('link');
+	fontFace.setAttribute('href','https://fonts.cdnfonts.com/css/politik');
+	fontFace.setAttribute('rel','stylesheet');
+	document.getElementsByTagName('head')[0].appendChild(fontFace);
+
 	// create br
 	let br=document.createElement('div');
 	br.style.clear='both';
@@ -237,6 +236,7 @@ window.addEventListener('load',function(){
 			iterations: Infinity,
 		});
 	});
+doThis();
+}
 
-});
-
+window.addEventListener('load',load);
